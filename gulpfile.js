@@ -20,7 +20,7 @@ function serve(done) {
 
 function watch() {
     gulp.watch('./*.html', gulp.series(reload));
-    gulp.watch('./module/*.js', gulp.series(reload));
+    gulp.watch('./modules/*.js', gulp.series(reload));
 }
 
 gulp.task('default', gulp.series(serve, watch));
